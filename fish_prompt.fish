@@ -2,7 +2,7 @@
 # Theme based on Bira theme from oh-my-zsh: https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/bira.zsh-theme
 # Some code stolen from oh-my-fish clearance theme: https://github.com/bpinto/oh-my-fish/blob/master/themes/clearance/
 
-set -l fish "⋊>"
+set -l fish "⋊ >"
 
 function __user_host
   set -l content
@@ -62,7 +62,7 @@ function fish_prompt
   echo -e ''
 
   if [ $st != 0 ];
-    echo (set_color white)"╰─"(set_color --bold white)"⋊ >"(set_color --bold red)"| " (set_color normal)
+    echo (set_color white)"╰─"(set_color --bold white)"⋊ >"(set_color --bold red)"| "(set_color normal)
   else
     echo (set_color white)"╰─"(set_color --bold white)"⋊ >| "(set_color normal)
   end
